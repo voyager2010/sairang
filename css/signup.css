@@ -1,0 +1,178 @@
+body {
+    background: #F8FAFC;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.signup-card {
+    width: 700px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+
+    display: flex;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.left-section {
+    width: 50%;
+    padding: 30px 25px;
+    background-color: #f7f7f7;
+}
+
+.signup-heading {
+    text-align: center;
+    color: #0d9488;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    margin-bottom: 15px;
+    font-size: 15px;
+    outline: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+   background:orange;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    transform: translateY(-3px);
+     background:#ff7b00;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.bottom-text a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.right-section {
+    width: 50%;
+    background-color: #eef0f6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.right-img {
+    width: 320px;
+    margin-bottom: 15px;
+}
+
+.right-heading {
+    color: #0d9488;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.right-description {
+    font-size: 20px;
+    color: #444;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+    .signup-card {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .left-section {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .signup-heading {
+        font-size: 30px;
+    }
+
+    .input-box {
+        padding: 14px;
+        font-size: 15px;
+        width: 200px;
+
+    }
+
+    .signup-btn {
+        padding: 14px;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .bottom-text {
+        font-size: 15px;
+    }
+
+
+
+    .right-section {
+        display: none;
+    }
+
+
+    .checkbox-container {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+
+    .main-container {
+        padding: 20px 10px;
+    }
+
+}
