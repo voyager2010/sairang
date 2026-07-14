@@ -36,6 +36,9 @@ body {
 }
 
 .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 12px;
     border: none;
@@ -60,7 +63,7 @@ body {
     padding: 12px;
     border: none;
     border-radius: 10px;
-   background:orange;
+    background: orange;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -70,7 +73,7 @@ body {
 
 .signup-btn:hover {
     transform: translateY(-3px);
-     background:#ff7b00;
+    background: #ff7b00;
 }
 
 .bottom-text {
@@ -89,14 +92,11 @@ body {
 .right-section {
     width: 50%;
     background-color: #eef0f6;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 20px;
 }
 
@@ -115,6 +115,25 @@ body {
     font-size: 20px;
     color: #444;
     line-height: 28px;
+}
+
+
+.password-box {
+    position: relative;
+
+}
+
+.eye-icon {
+    width: 22px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-box .input-box {
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
