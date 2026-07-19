@@ -1,23 +1,21 @@
 body {
     background: #F8FAFC;
+    width: 100%;
 }
 
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 40px 20px;
+    padding: 20px 10px;
 }
 
 .signup-card {
     width: 700px;
     background-color: #f4f4f4;
     border-radius: 20px;
-
     display: flex;
     overflow: hidden;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -26,6 +24,7 @@ body {
     width: 50%;
     padding: 30px 25px;
     background-color: #f7f7f7;
+    padding-right: 40px;
 }
 
 .signup-heading {
@@ -53,7 +52,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-bottom: 25px;
     color: #444;
 }
@@ -67,7 +65,6 @@ body {
     color: white;
     font-size: 18px;
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -120,7 +117,6 @@ body {
 
 .password-box {
     position: relative;
-
 }
 
 .eye-icon {
@@ -142,14 +138,11 @@ body {
         overflow-x: hidden;
     }
 
-
-
     .signup-card {
         width: 100%;
         flex-direction: column;
         height: auto;
     }
-
 
     .left-section {
         width: 100%;
@@ -177,18 +170,14 @@ body {
         font-size: 15px;
     }
 
-
-
     .right-section {
         display: none;
     }
-
 
     .checkbox-container {
         font-size: 14px;
         align-items: flex-start;
     }
-
 
     .main-container {
         padding: 20px 10px;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/login.css">
+</head>
+
+<body>
+    <div class="navbar-container">
+
+        <div class="item1">
+            <img src="./../images/sairang-logo.jpeg" class="navbar-logo" />
+            <b class="website-name">Sairang</b>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            <img src="./../images/humburger.png" class="navbar-humburger-logo" />
+        </label>
+
+
+
+        <div class="item2">
+            <a href="./../index.html" class="menu-item">Home</a>
+            <a href="#" class="menu-item">Destinations</a>
+            <a href="#" class="menu-item">Trip Planner</a>
+            <a href="#" class="menu-item">Gallery</a>
+            <a href="#" class="menu-item">Contact</a>
+        </div>
+
+
+        <div class="item3">
+            <a href="login.html" class="menu-item">Login</a>
+            <a href="./signup.html" class="menu-item">Sign up</a>
+
+        </div>
+    </div>
+
+
+    <div class="main-container">
+
+        <div class="login-container">
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-section">
+
+                <img src="./../images/login-page.png" class="right-img">
+
+                <h2 class="right-heading">
+                    Sairang
+
+                </h2>
+
+                <p class="right-description">
+                    All-in-one platform to find the right places.
+                </p>
+
+            </div>
+
+            <!-- LEFT SIDE -->
+
+            <div class="left-section">
+
+                <h1 class="login-title">Login</h1>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Username or Email" id="email">
+                </div>
+
+                <div class="password-container">
+
+                    <input type="password" placeholder="Password" class="password-input" id="userPassword">
+
+                    <img src="./../images/hide.png" class="password-icon" id="togglePassword">
+
+                </div>
+
+
+                <button class="login-btn" id="loginButton" type="button">
+                    Login
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+     <script src="./../js/login.js"></script>
+    
+
+
+</body>
+
+</html>

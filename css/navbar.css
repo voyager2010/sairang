@@ -1,20 +1,20 @@
-body{
-    background:#F8FAFC;
+body {
+    background: #F8FAFC;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-     background:#0F766E;
+    background: #0F766E;
     position: sticky;
     text-align: center;
     padding: 5px;
-      top: 0;
+    top: 0;
     z-index: 10;
-    width: 100%;
 }
 
 .item1 {
@@ -24,13 +24,13 @@ body{
 }
 
 .navbar-logo {
-    height:60px ;
+    height: 60px;
     border-radius: 55px;
 }
 
 .website-name {
-     font-size: 25px;
-     color:whitesmoke;
+    font-size: 25px;
+    color: whitesmoke;
     padding-left: 15px;
 }
 
@@ -42,7 +42,7 @@ body{
 }
 
 .menu-item {
-     color:white;
+    color: white;
     text-decoration: none;
     margin-right: 20px;
 }
@@ -55,7 +55,7 @@ body{
 }
 
 .menu-item:hover {
-      color:#f2a809;
+    color: #f2a809;
 }
 
 .navbar-humburger-logo {
@@ -71,13 +71,13 @@ body{
     display: none;
     cursor: pointer;
     margin-right: 20px;
-} 
+}
 
 
 /* Mobile Screen */
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-   
+
     .navbar-container {
         flex-wrap: wrap;
     }
@@ -89,10 +89,10 @@ body{
     }
 
     .website-name {
-     font-size: 20px;
-    color: #FFFFFF;
-    padding-left: 15px;
-}
+        font-size: 20px;
+        color: #FFFFFF;
+        padding-left: 15px;
+    }
 
     .item2,
     .item3 {
@@ -108,8 +108,8 @@ body{
         font-size: 18px;
     }
 
-    #menu-toggle:checked ~ .item2,
-    #menu-toggle:checked ~ .item3 {
+    #menu-toggle:checked~.item2,
+    #menu-toggle:checked~.item3 {
         display: flex;
     }
 }
