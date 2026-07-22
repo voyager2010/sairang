@@ -17,7 +17,7 @@ setInterval(() => {
             behavior: "smooth"
         });
     }
-}, 3000); // Slide every 3 seconds
+}, 3000);
 
 
 

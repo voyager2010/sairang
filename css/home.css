@@ -233,4 +233,104 @@
 }
 
 
+@media (max-width:768px){
+
+    /* Hero Section */
+    .hero{
+        height: 80vh;
+    }
+
+    .image-heading{
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    .image-text{
+        font-size: 16px;
+        margin: 15px;
+        padding: 0 10px;
+    }
+
+    .explore-btn{
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+
+    /* Popular Section */
+    .popular{
+        padding: 20px;
+    }
+
+    .popular h1{
+        font-size: 30px;
+    }
+
+    .card-container{
+        gap: 15px;
+    }
+
+    .card{
+        min-width: 250px;
+    }
+
+    .place-img{
+        height: 170px;
+    }
+
+    /* Why Choose Section */
+    .why-choose{
+        padding: 40px 20px;
+    }
+
+    .section-title{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .choose-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose-card{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .icon{
+        font-size: 40px;
+    }
+
+    /* Destination Section */
+    .destination-section{
+        padding: 30px 20px;
+    }
+
+    .title{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .tab-container{
+        gap: 10px;
+    }
+
+    .tab-btn{
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+
+    .destination-box{
+        gap: 20px;
+    }
+
+    .destination-card{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .destination-card img{
+        height: 190px;
+    }
+}
 
