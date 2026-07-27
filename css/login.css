@@ -1,8 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+
 
 body {
     background: #F8FAFC;
@@ -223,31 +219,3 @@ body {
 }
 
 
-/* Small Mobile */
-
-@media (max-width:480px){
-
-    .login-container{
-        max-width:100%;
-    }
-
-    .left-section{
-        padding:20px 15px;
-    }
-
-    .login-title{
-        font-size:26px;
-    }
-
-    .input-box input,
-    .password-input{
-        padding:14px;
-        font-size:15px;
-    }
-
-    .login-btn{
-        padding:14px;
-        font-size:16px;
-    }
-}
-   
