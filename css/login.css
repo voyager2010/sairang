@@ -1,4 +1,8 @@
-/* BODY */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body {
     background: #F8FAFC;
@@ -19,7 +23,8 @@ body {
 /* LOGIN CONTAINER */
 
 .login-container {
-    width: 800px;
+     width:90%;
+    max-width:800px;
     height: 450px;
     background-color: white;
     border-radius: 25px;
@@ -135,7 +140,7 @@ body {
 
 .password-container{
     position: relative;
-    width: 300px;
+    width: 100%;
 }
 
 .password-input{
@@ -158,45 +163,91 @@ body {
     cursor: pointer;
 }
 
-@media screen and (min-width: 300px) and (max-width: 768px) {
-   
-    .right-section {
-        display: none;
+
+
+@media (max-width:768px){
+
+    .main-container{
+        padding:20px 15px;
     }
 
-    .login-container {
-        width: 100%;
-        height: auto;
+    .login-container{
+        width:100%;
+        max-width:380px;
+        height:auto;
+        display:block;
+        margin:0 auto;
+        border-radius:15px;
     }
 
-    .left-section {
-        width: 100%;
-        padding: 30px 20px;
+    .right-section{
+        display:none;
     }
 
-    .main-container {
-        padding: 20px 10px;
+    .left-section{
+        width:100%;
+        padding:30px 20px;
+        box-sizing:border-box;
     }
 
-    .login-title {
-        font-size: 30px;
+    .login-title{
+        font-size:30px;
+        margin-bottom:25px;
     }
 
-    .input-box input {
-        padding: 14px;
-        font-size: 15px;
-        width: 200px;
+    .input-box{
+        width:100%;
     }
 
-    .login-btn {
-        padding: 14px;
-        font-size: 16px;
+    .input-box input{
+        width:100%;
+        box-sizing:border-box;
     }
 
-    .options-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+    .password-container{
+        width:100%;
     }
 
+    .password-input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .login-btn{
+        width:100%;
+    }
+
+    .password-icon{
+        right:15px;
+    }
 }
+
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    .login-container{
+        max-width:100%;
+    }
+
+    .left-section{
+        padding:20px 15px;
+    }
+
+    .login-title{
+        font-size:26px;
+    }
+
+    .input-box input,
+    .password-input{
+        padding:14px;
+        font-size:15px;
+    }
+
+    .login-btn{
+        padding:14px;
+        font-size:16px;
+    }
+}
+   
