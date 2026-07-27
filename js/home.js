@@ -1,23 +1,12 @@
 const container = document.getElementById("cardContainer");
 
-let scrollAmount = 0;
-const cardWidth = 300; 
-
 setInterval(() => {
-    if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        
-        container.scrollTo({
-            left: 0,
-            behavior: "smooth"
-        });
-    } else {
-        
-        container.scrollBy({
-            left: cardWidth,
-            behavior: "smooth"
-        });
+    container.scrollLeft += 300;
+
+    if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+        container.scrollLeft = 0;
     }
-}, 3000);
+}, 2000);
 
 
 
