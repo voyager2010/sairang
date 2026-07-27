@@ -1,3 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
 body {
     background: #F8FAFC;
     width: 100%;
@@ -11,7 +18,8 @@ body {
 }
 
 .signup-card {
-    width: 700px;
+    width:90%;
+    max-width:700px;
     background-color: #f4f4f4;
     border-radius: 20px;
     display: flex;
@@ -132,55 +140,81 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
+
+
+@media (max-width:768px){
+
+    *{
+        box-sizing:border-box;
     }
 
-    .signup-card {
-        width: 100%;
-        flex-direction: column;
-        height: auto;
+    body{
+        overflow-x:hidden;
     }
 
-    .left-section {
-        width: 100%;
-        padding: 25px 20px;
+    .main-container{
+        padding:20px 15px;
     }
 
-    .signup-heading {
-        font-size: 30px;
+    .signup-card{
+        width:100%;
+        max-width:380px;
+        margin:auto;
+        flex-direction:column;
+        border-radius:15px;
     }
 
-    .input-box {
-        padding: 14px;
-        font-size: 15px;
-        width: 200px;
-
+   
+    .right-section{
+        display:none;
     }
 
-    .signup-btn {
-        padding: 14px;
-        font-size: 16px;
-        width: 200px;
+    .left-section{
+        width:100%;
+        padding:25px 20px;
     }
 
-    .bottom-text {
-        font-size: 15px;
+    .signup-heading{
+        font-size:28px;
+        margin-bottom:20px;
     }
 
-    .right-section {
-        display: none;
+    .input-box{
+        width:100%;
+        padding:14px;
+        font-size:15px;
+        margin-bottom:15px;
     }
 
-    .checkbox-container {
-        font-size: 14px;
-        align-items: flex-start;
+    .password-box{
+        width:100%;
     }
 
-    .main-container {
-        padding: 20px 10px;
+    .password-box .input-box{
+        width:100%;
     }
 
+    .eye-icon{
+        right:15px;
+    }
+
+    .signup-btn{
+        width:100%;
+        padding:14px;
+        font-size:16px;
+    }
+
+    .checkbox-container{
+        flex-wrap:wrap;
+        font-size:14px;
+    }
+
+    .bottom-text{
+        font-size:15px;
+    }
 }
+
+
+
+
