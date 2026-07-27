@@ -20,8 +20,9 @@ body{
 .heading-2 {
      display: block;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
     color: #2B2D42;
+    margin-top: 10px;
 
 }
 
