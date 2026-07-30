@@ -11,21 +11,20 @@ setInterval(() => {
 
 
 
-function changeTab(region, button){
+function changeTab(id, button) {
 
-    let sections = document.querySelectorAll(".destination-box");
+    document.getElementById("north").classList.remove("show");
+    document.getElementById("south").classList.remove("show");
+    document.getElementById("east").classList.remove("show");
+    document.getElementById("west").classList.remove("show");
 
-    sections.forEach(function(section){
-        section.classList.remove("show");
-    });
+    document.getElementById(id).classList.add("show");
 
-    document.getElementById(region).classList.add("show");
+    let buttons = document.getElementsByClassName("tab-btn");
 
-    let buttons = document.querySelectorAll(".tab-btn");
-
-    buttons.forEach(function(btn){
-        btn.classList.remove("active");
-    });
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
 
     button.classList.add("active");
 }

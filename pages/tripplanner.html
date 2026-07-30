@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Trip Planner | Sairang</title>
+
+    <link rel="stylesheet" href="./../css/tripplanner.css">
     <link rel="stylesheet" href="./../css/navbar.css">
-    <link rel="stylesheet" href="./../css/login.css">
     <link rel="stylesheet" href="./../css/footer.css">
 </head>
 
 <body>
+
     <div class="navbar-container">
 
         <div class="item1">
@@ -36,66 +38,179 @@
 
 
         <div class="item3">
-            <a href="login.html" class="menu-item">Login</a>
+            <a href="./login.html" class="menu-item">Login</a>
             <a href="./signup.html" class="menu-item">Sign up</a>
 
         </div>
     </div>
 
+    <!-- Hero Section -->
 
-    <div class="main-container">
+    <section class="hero">
 
-        <div class="login-container">
+        <div class="overlay">
 
-            <!-- RIGHT SIDE -->
+            <h1>Plan Your Perfect Trip</h1>
 
-            <div class="right-section">
-
-                <img src="./../images/login-page-image.svg" class="right-img">
-
-                <h2 class="right-heading">
-                    Sairang
-
-                </h2>
-
-                <p class="right-description">
-                    All-in-one platform to find the right places.
-                </p>
-
-            </div>
-
-            <!-- LEFT SIDE -->
-
-            <div class="left-section">
-
-                <h1 class="login-title">Login</h1>
-
-                <div class="input-box">
-                    <input type="email" placeholder="Username or Email" id="email">
-                </div>
-
-                <div class="password-container">
-
-                    <input type="password" placeholder="Password" class="password-input" id="userPassword">
-
-                    <img src="./../images/hide.png" class="password-icon" id="togglePassword">
-
-                </div>
-
-
-                <button class="login-btn" id="loginButton" type="button">
-                    Login
-                </button>
-
-
-            </div>
-
+            <p>
+                Select your destination, budget and travel details.
+                Sairang will help you plan the perfect vacation.
+            </p>
 
         </div>
 
-    </div>
+    </section>
 
+    <!-- Planner -->
 
+    <section class="planner">
+
+        <h2>Trip Planner</h2>
+
+        <div class="planner-box">
+
+            <!-- Destination -->
+
+            <div class="input-group">
+
+                <label>Destination</label>
+
+                <select id="destination">
+
+                    <option>Select Destination</option>
+
+                    <option>Hampi</option>
+                    <option>Goa</option>
+                    <option>Kashmir</option>
+                    <option>Taj Mahal</option>
+                    <option>Jaipur</option>
+                    <option>Munnar</option>
+                    <option>Andaman</option>
+                    <option>Gateway of India</option>
+
+                </select>
+
+            </div>
+
+            <!-- Departure -->
+
+            <div class="input-group">
+
+                <label>Departure Date</label>
+
+                <input type="date" id="departure">
+
+            </div>
+
+            <!-- Return -->
+
+            <div class="input-group">
+
+                <label>Return Date</label>
+
+                <input type="date" id="return">
+
+            </div>
+
+            <!-- Travelers -->
+
+            <div class="input-group">
+
+                <label>Travelers</label>
+
+                <input type="number" id="travellers" min="1" value="1">
+
+            </div>
+
+            <!-- Budget -->
+
+            <div class="input-group">
+
+                <label>Budget</label>
+
+                <select id="budget">
+
+                    <option>₹5,000</option>
+                    <option>₹10,000</option>
+                    <option>₹20,000</option>
+                    <option>₹30,000+</option>
+
+                </select>
+
+            </div>
+
+            <!-- Transport -->
+
+            <div class="input-group">
+
+                <label>Transport</label>
+
+                <select id="transport">
+
+                    <option>Flight</option>
+                    <option>Train</option>
+                    <option>Bus</option>
+                    <option>Car</option>
+
+                </select>
+
+            </div>
+
+            <!-- Hotel -->
+
+            <div class="input-group">
+
+                <label>Hotel</label>
+
+                <select id="hotel">
+
+                    <option>Budget Hotel</option>
+                    <option>3 Star Hotel</option>
+                    <option>5 Star Hotel</option>
+                    <option>Resort</option>
+
+                </select>
+
+            </div>
+
+            <!-- Trip Type -->
+
+            <div class="input-group">
+
+                <label>Trip Type</label>
+
+                <select id="trip">
+
+                    <option>Family</option>
+                    <option>Friends</option>
+                    <option>Solo</option>
+                    <option>Honeymoon</option>
+
+                </select>
+
+            </div>
+
+            <button id="planBtn">
+                Plan My Trip
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Result -->
+
+    <section class="result">
+
+        <h2>Your Trip Summary</h2>
+
+        <div id="summary">
+
+            Fill the form and click "Plan My Trip".
+
+        </div>
+
+    </section>
 
     <div class="footer">
 
@@ -162,9 +277,8 @@
         </div>
     </div>
 
-    <script src="./../js/login.js"></script>
 
-
+    <script src="./../js/tripplanner.js"></script>
 
 </body>
 
