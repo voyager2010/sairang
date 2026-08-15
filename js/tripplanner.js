@@ -74,8 +74,7 @@ planBtn.addEventListener("click", function () {
     document.getElementById("summary").innerHTML = `
 
         <h3 style="color:#0D9488; margin-bottom:20px;">
-            Your Trip is Ready 🎉
-        </h3>
+            Your Trip is Ready 🎉 
 
         <p><b>📍 Destination :</b> ${destination}</p>
 
