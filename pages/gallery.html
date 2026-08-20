@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/gallery.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+</head>
+
+<body>
+    <div class="navbar-container">
+
+        <div class="item1">
+            <img src="./../images/sairang-logo.jpeg" class="navbar-logo" />
+            <b class="website-name">Sairang</b>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburger">
+            <img src="./../images/menu.png" class="navbar-humburger-logo" />
+        </label>
+
+
+
+        <div class="item2">
+            <a href="./../index.html" class="menu-item">Home</a>
+            <a href="./destinations.html" class="menu-item">Destinations</a>
+            <a href="./tripplanner.html" class="menu-item">Trip Planner</a>
+            <a href="./gallery.html" class="menu-item">Gallery</a>
+            <a href="./contact.html" class="menu-item">Contact</a>
+        </div>
+
+
+        <div class="item3">
+            <a href="login.html" class="menu-item">Login</a>
+            <a href="./signup.html" class="menu-item">Sign up</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- ================= HERO ================= -->
+    <section class="gallery-hero">
+
+        <div class="hero-overlay">
+
+            <h1>Explore India Through Our Gallery</h1>
+            <p> Discover beautiful destinations, breathtaking landscapes, rich culture and unforgettable travel moments.
+            </p> <button onclick="scrollToGallery()"> Explore Gallery </button>
+        </div>
+
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-heading">
+            <span>SAIRANG TRAVEL GALLERY</span>
+            <h2>Beautiful Places, Beautiful Memories</h2>
+            <p> Explore some of India's most beautiful destinations through our collection of travel photographs.
+            </p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all"> All </button>
+            <button class="filter-btn" data-filter="nature"> Nature </button>
+            <button class="filter-btn" data-filter="beach"> Beaches </button>
+            <button class="filter-btn" data-filter="heritage"> Heritage </button>
+            <button class="filter-btn" data-filter="culture"> Culture </button>
+            <button class="filter-btn" data-filter="food"> Food </button>
+        </div>
+
+        <!-- ================= PHOTO GRID ================= -->
+        <div class="gallery-grid">
+
+            <!-- Hampi -->
+            <div class="gallery-item large" data-category="heritage" data-title="Hampi, Karnataka"
+                data-description="Ancient temples, magnificent ruins and beautiful boulder landscapes.">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTje6FxurcRIwnBfIIqSbd4TJnlwl238XewAngpeMHExQ&s=10" alt="Hampi">
+                <div class="image-info">
+                    <span>Heritage</span>
+                    <h3>Hampi, Karnataka</h3>
+                    <p>Ancient ruins & temples</p>
+                </div>
+            </div>
+
+
+            <!-- Goa -->
+            <div class="gallery-item" data-category="beach" data-title="Goa"
+                data-description="Golden beaches, beautiful sunsets and vibrant coastal life.">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=900" alt="Goa">
+
+                <div class="image-info">
+                    <span>Beach</span>
+                    <h3>Goa</h3>
+                    <p>Beaches & sunsets</p>
+                </div>
+            </div>
+
+            <!-- Kashmir -->
+            <div class="gallery-item" data-category="nature" data-title="Kashmir"
+                data-description="Snow-covered mountains, peaceful lakes and beautiful valleys."> <img
+                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=900" alt="Kashmir">
+                <div class="image-info">
+                    <span>Nature</span>
+                    <h3>Kashmir</h3>
+                    <p>Paradise in the Himalayas</p>
+                </div>
+            </div>
+
+
+            <!-- Taj Mahal -->
+            <div class="gallery-item" data-category="heritage" data-title="Taj Mahal, Agra"
+                data-description="The iconic white marble monument and symbol of love.">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000" alt="Taj Mahal">
+                <div class="image-info">
+                    <span>Heritage</span>
+                    <h3>Taj Mahal</h3>
+                    <p>Agra, Uttar Pradesh</p>
+                </div>
+            </div>
+
+
+            <!-- Jaipur -->
+
+            <div class="gallery-item" data-category="culture" data-title="Jaipur, Rajasthan"
+                data-description="Royal palaces, colourful markets and magnificent forts.">
+                <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1000" alt="Jaipur">
+                <div class="image-info">
+                    <span>Culture</span>
+                    <h3>Jaipur</h3>
+                    <p>The Pink City</p>
+                </div>
+            </div>
+
+
+            <!-- Munnar -->
+            <div class="gallery-item large" data-category="nature" data-title="Munnar, Kerala"
+                data-description="Beautiful tea plantations surrounded by green mountains.">
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200" alt="Munnar">
+                <div class="image-info">
+                    <span>Nature</span>
+                    <h3>Munnar</h3>
+                    <p>Tea gardens & green hills</p>
+                </div>
+            </div>
+
+            <!-- Andaman -->
+            <div class="gallery-item" data-category="beach" data-title="Andaman & Nicobar Islands"
+                data-description="Crystal-clear water, tropical beaches and island adventures.">
+                <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1000" alt="Andaman">
+                <div class="image-info">
+                    <span>Beach</span>
+                    <h3>Andaman Islands</h3>
+                    <p>Island paradise</p>
+                </div>
+            </div>
+
+
+            <!-- Mumbai -->
+            <div class="gallery-item" data-category="culture" data-title="Gateway of India, Mumbai"
+                data-description="An iconic Mumbai landmark overlooking the Arabian Sea.">
+                <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1000" alt="Gateway of India">
+                <div class="image-info">
+                    <span>Culture</span>
+                    <h3>Gateway of India</h3>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+            </div>
+
+            <!-- Food -->
+            <div class="gallery-item" data-category="food" data-title="Indian Cuisine"
+                data-description="Discover delicious and diverse flavours from across India.">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1000" alt="Indian Food">
+                <div class="image-info">
+                    <span>Food</span>
+                    <h3>Indian Cuisine</h3>
+                    <p>Flavours of India</p>
+                </div>
+            </div>
+
+            <!-- Mountains -->
+            <div class="gallery-item" data-category="nature" data-title="Himalayan Mountains"
+                data-description="Majestic mountain landscapes and peaceful Himalayan scenery.">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000" alt="Mountains">
+                <div class="image-info">
+                    <span>Nature</span>
+                    <h3>Himalayas</h3>
+                    <p>Majestic mountains</p>
+                </div>
+            </div>
+
+            <!-- Beach -->
+            <div class="gallery-item" data-category="beach" data-title="Indian Coast"
+                data-description="Peaceful beaches and beautiful ocean views.">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000" alt="Beach">
+                <div class="image-info">
+                    <span>Beach</span>
+                    <h3>Indian Coast</h3>
+                    <p>Sun, sand & sea</p>
+                </div>
+            </div>
+
+            <!-- Palace -->
+            <div class="gallery-item" data-category="heritage" data-title="Indian Palace"
+                data-description="Experience India's magnificent royal architecture and heritage.">
+                <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1000" alt="Indian Palace">
+                <div class="image-info">
+                    <span>Heritage</span>
+                    <h3>Royal India</h3>
+                    <p>Palaces & architecture</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn"> × </button>
+        <button class="prev-btn" id="prevBtn"> ‹ </button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <div class="lightbox-info">
+                <h2 id="lightboxTitle"></h2>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+        <button class="next-btn" id="nextBtn"> › </button>
+
+    </div>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="gallery-cta">
+        <div>
+            <h2>Ready to Explore India?</h2>
+            <p> Choose your destination and start planning your next adventure. </p> <a href="./../pages/tripplanner.html"> Plan
+                Your Trip </a>
+        </div>
+    </section>
+
+
+
+
+    <div class="footer">
+
+        <div class="footer-menu-1">
+            <div class="footer-logo-section">
+                <img src="./../images/sairang-logo.jpeg" class="logo-img" />
+                <h4>Sairang</h4>
+
+            </div>
+            <p class="footer-menu-1-text"> Sairang is your trusted travel companion, helping you discover amazing
+                destinations, plan memorable trips, and explore the beauty of India.
+            </p>
+
+            <div class="footer-logo-all">
+                <a href="https://peerlist.io/voyager2010" target="_blank">
+                    <img src="./../images/peerlist-logo.png" height="20px" class="footer-logo" /></a>
+
+                <a href="https://www.linkedin.com/in/voyager2010/" target="_blank"><img
+                        src="./../images/linkedin-logo.webp" height="20px" class="footer-logo" /></a>
+
+                <a href="https://github.com/voyager2010" target="_blank"><img src="./../images/github-logo.png"
+                        class="footer-logo" height="20px" /></a>
+            </div>
+        </div>
+
+        <div class="footer-menu">
+            <div class="footer-quick-links">
+                <h3>Quick Links</h3>
+                <a href="./../index.html" class="menu-item">Home</a>
+                <a href="./destinations.html" class="menu-item">Destinations</a>
+                <a href="./tripplanner.html" class="menu-item">Trip Planner</a>
+                <a href="./gallery.html" class="menu-item">Gallery</a>
+                <a href="./contact.html" class="menu-item">Contact</a>
+
+            </div>
+        </div>
+
+        <div class="footer-menu">
+            <div class="footer-categories-type">
+                <h3>Top Destinations</h3>
+                <a href="./../destination/hampi.html" class="menu-item">Hampi</a>
+                <a href="./../destination/tajmahal.html" class="menu-item">Taj Mahal</a>
+                <a href="./../destination/munnar.html" class="menu-item">Munnar</a>
+                <a href="./../destination/jaipur.html" class="menu-item">Jaipur</a>
+                <a href="./../destination/kashmir.html" class="menu-item">Kashmir</a>
+            </div>
+        </div>
+
+        <div class="footer-menu">
+            <h3>Contact Us</h3>
+            <div>
+                <a href="https://www.google.com/maps?q=404,+Laxmi+Heights,+Above+Lotus+Multi-speciality+Hospital,+Pune+-+412307"
+                    class="location" target="_blank">📍404, Laxmi Heights, Above Lotus
+                    Multi-speciality Hospital, Pune - 412307</a>
+            </div>
+
+
+            <a href="mailto:saihole2010@gmail.com" class="email" target="_blank">📧saihole2010@gmail.com</a>
+
+
+            <a href="tel:9975402726" class="email">📞 +91-9975402726</a>
+
+
+        </div>
+    </div>
+
+      <script src="./../js/gallery.js"></script>
+</body>
+
+</html>
