@@ -8,13 +8,12 @@ filterButtons.forEach(function(button) {
 
     button.addEventListener("click", function() {
 
-        // Remove active class
 
         filterButtons.forEach(function(btn) {
             btn.classList.remove("active");
         });
 
-        // Add active class
+       
 
         button.classList.add("active");
 
@@ -44,7 +43,7 @@ filterButtons.forEach(function(button) {
 });
 
 
-// ================= LIGHTBOX =================
+
 
 const lightbox = document.getElementById("lightbox");
 
@@ -70,7 +69,7 @@ const nextBtn =
 let currentIndex = 0;
 
 
-// Open image
+
 
 galleryItems.forEach(function(item, index) {
 
@@ -87,7 +86,7 @@ galleryItems.forEach(function(item, index) {
 });
 
 
-// Show image
+
 
 function showImage(index) {
 
@@ -112,7 +111,7 @@ function showImage(index) {
 }
 
 
-// Close lightbox
+
 
 closeBtn.addEventListener("click", function() {
 
@@ -121,7 +120,7 @@ closeBtn.addEventListener("click", function() {
 });
 
 
-// Next image
+
 
 nextBtn.addEventListener("click", function() {
 
@@ -138,7 +137,7 @@ nextBtn.addEventListener("click", function() {
 });
 
 
-// Previous image
+
 
 prevBtn.addEventListener("click", function() {
 
@@ -155,7 +154,7 @@ prevBtn.addEventListener("click", function() {
 });
 
 
-// Close when clicking outside image
+
 
 lightbox.addEventListener("click", function(event) {
 
@@ -168,7 +167,7 @@ lightbox.addEventListener("click", function(event) {
 });
 
 
-// Keyboard controls
+
 
 document.addEventListener("keydown", function(event) {
 
@@ -212,7 +211,7 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-// ================= HERO BUTTON =================
+
 
 function scrollToGallery() {
 
